@@ -1,0 +1,16 @@
+
+# Webpanel
+#Last Modified 09/10/2013
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /src/web-programming/UnitenInfo/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$   index.php?id=$1&%{QUERY_STRING} [L]
+</IfModule>
+
+#ErrorDocument 404 http://www.mahadirnetwork.com
+#ErrorDocument 403 http://www.mahadirnetwork.com
+Options -Indexes 
+
+# END Webpanel

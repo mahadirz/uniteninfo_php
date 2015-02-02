@@ -1,0 +1,12 @@
+# Ignore cache
+#cache/*
+#!cache/.gitkeep
+
+#Ignore templaces_c
+templates_c/*.php
+
+#Ignore temp
+~*
+
+#Ignore temp php
+temp.php
